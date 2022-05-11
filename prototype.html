@@ -1,0 +1,25 @@
+<html>
+
+
+<script>
+
+function employeedata(city,name){
+
+this.city = city;
+this.name = name;
+}
+
+employeedata.prototype.data = function(fname){
+this.fname = fname;
+ return this.name +" "+ this.city+" "+this.fname;
+
+}
+
+var employeeOne = new employeedata("jodhpur","priyanka");
+var employeeTwo = new employeedata("delhi","raman");
+
+document.writeln(employeeOne.data("khushi")+"<br>");
+document.writeln(employeeTwo.data("anand"));
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+
+ <script>
+function School(sName,area,pinCode){
+
+ this.sName = sName;
+ this.area = area;
+ this.pinCode = pinCode;
+
+}
+
+School.prototype.city = {cityO :"Ahmdabad",cityT : "Tamilnadu"};
+
+var SchoolD1 = new School("Sainik Public School","Vasant Kunj",110075);
+var SchoolD2 = new School("D.A.V Public School","Rajouri Garden",110045);
+
+document.writeln(SchoolD1.sName+" "+SchoolD1.area+" "+SchoolD1.pinCode+" "+SchoolD1.city.cityO);
+
+document.writeln(SchoolD2.sName+" "+SchoolD2.area+" "+SchoolD2.pinCode+" "+SchoolD2.city.cityT);
+
+
+
+ </script>
+
+
+</html>
